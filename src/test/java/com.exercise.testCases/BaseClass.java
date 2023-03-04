@@ -1,6 +1,9 @@
 package com.exercise.testCases;
 
+import com.exercise.pageObjects.ContactUsPage;
+import com.exercise.pageObjects.ProductPage;
 import com.exercise.pageObjects.RegistrationPage;
+import com.exercise.pageObjects.TestCasePage;
 import com.exercise.utilities.ReadConfig;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -16,7 +19,11 @@ import java.util.Map;
 public class BaseClass {
     protected RegistrationPage registrationPage;
     public WebDriver driver;
-    ReadConfig readConfig=new ReadConfig();
+    protected ContactUsPage contactUsPage;
+    protected TestCasePage testCasePage;
+    protected ProductPage productPage;
+    protected ReadConfig readConfig=new ReadConfig();
+
 
 
     @BeforeClass
@@ -30,6 +37,9 @@ public class BaseClass {
         ChromeOptions p = new ChromeOptions();
         p.setExperimentalOption("prefs", pf);
         registrationPage=new RegistrationPage(driver);
+        contactUsPage=new ContactUsPage(driver);
+        testCasePage=new TestCasePage(driver);
+        productPage=new ProductPage(driver);
         //readConfig=new ReadConfig();
     }
     @AfterClass

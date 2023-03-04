@@ -1,12 +1,14 @@
 package com.exercise.testCases;
 
 import com.exercise.pageObjects.RegistrationPage;
+import org.junit.jupiter.api.DisplayName;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Registration extends BaseClass {
     @Test(priority = 1)
+    @DisplayName("hello")
     public void lunchBrowser(){
         Assert.assertTrue(registrationPage.getPageTitile(readConfig.getPageTitle()));
         registrationPage.signUp();
@@ -79,6 +81,40 @@ public class Registration extends BaseClass {
         registrationPage.submit();
         Assert.assertTrue(registrationPage.getExistMail(),"Email Address already exist!");
 
+    }
+    @Test(priority = 7,dependsOnMethods = "lunchBrowser")
+    public void  contactUs(){
+        contactUsPage.clickContactUs();
+        Assert.assertTrue(contactUsPage.getGetInTouchHeading(),"GET IN TOUCH");
+        contactUsPage.enterSenderName(readConfig.getName());
+        contactUsPage.enterSenderMail(readConfig.getEmail());
+        contactUsPage.enterSubject(readConfig.getSubject());
+        contactUsPage.enterMessage(readConfig.getMessage());
+        contactUsPage.uploadFile();
+        contactUsPage.submitMessage();
+        contactUsPage.clickOkay();
+        Assert.assertTrue(contactUsPage.getSumitSuccessMsg(),"Success! Your details have been submitted successfully.");
+        contactUsPage.getBtnHome();
+        registrationPage.getAlert();
+        Assert.assertTrue(registrationPage.getPageTitile(readConfig.getPageTitle()),"Automation Exercise");
+
+    }
+    @Test(priority = 8)
+    public void testCaseBtn(){
+        Assert.assertTrue(registrationPage.getPageTitile(readConfig.getPageTitle()));
+        testCasePage.clickBtnTestCase();
+        registrationPage.getAlert();
+        Assert.assertEquals(testCasePage.getTestPageTitle(),"Automation Practice Website for UI Testing - Test Cases");
+    }
+    @Test(priority = 9)
+    public void testProduct(){
+        Assert.assertTrue(registrationPage.getPageTitile(readConfig.getPageTitle()));
+        registrationPage.clickOnProduct();
+        registrationPage.getAlert();
+        Assert.assertEquals(productPage.getProductPageTitle(),"Automation Exercise - All Products");
+        Assert.assertTrue(productPage.getProductList());
+        productPage.clickViewProduct();
+        productPage.getProductDetailsPageTitle();
     }
 
 }

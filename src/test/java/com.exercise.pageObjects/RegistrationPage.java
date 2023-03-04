@@ -52,6 +52,7 @@ public class RegistrationPage extends AbstratePage {
     private final By invalidUserNameOrPassword=By.xpath("//p[normalize-space()='Your email or password is incorrect!']");
     private final By logOut=By.cssSelector("a[href='/logout']");
     private final By existMailError=By.cssSelector("body > section:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > form:nth-child(2) > p:nth-child(5)");
+    private final By product=By.cssSelector("a[href='/products']");
     public boolean getPageTitile(String title) {
 
         return driver.getTitle().equals(title);
@@ -156,6 +157,10 @@ public class RegistrationPage extends AbstratePage {
     }
     public boolean getLoginPageTitle(String _loginTitle){return driver.getTitle().equals(_loginTitle);
     }
-    public boolean getExistMail(){return driver.findElement(existMailError).isDisplayed();}
+    public boolean getExistMail(){return driver.findElement(existMailError).isDisplayed();
+    }
+    public void clickOnProduct(){driver.findElement(product).click();
+    }
+
 
 }

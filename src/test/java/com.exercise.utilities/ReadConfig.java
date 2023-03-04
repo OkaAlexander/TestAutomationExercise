@@ -108,5 +108,13 @@ public class ReadConfig {
         String newName=pro.getProperty("newName");
         return newName;
     }
+    public String getSubject(){
+        String subject=pro.getProperty("subject");
+        return subject;
+    }
+    public String getMessage(){
+        String message=pro.getProperty("message");
+        return message;
+    }
 
 }

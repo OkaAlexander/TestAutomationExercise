@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a89720a3-cb0d-4e0b-b60b-02e243971c5b" name="Changes" comment="" />
+    <list default="true" id="a89720a3-cb0d-4e0b-b60b-02e243971c5b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com.exercise.pageObjects/ContactUsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com.exercise.pageObjects/ProductPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com.exercise.pageObjects/TestCasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.exercise.pageObjects/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.exercise.pageObjects/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.exercise.testCases/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.exercise.testCases/BaseClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.exercise.testCases/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.exercise.testCases/Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com.exercise.utilities/ReadConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.exercise.utilities/ReadConfig.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,8 +52,8 @@
       <recent name="C:\Users\alexa\IdeaProjects\TestAutomastionExercise\configuration" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Registration.registerWithExistEmail">
-    <configuration name="Registration.RegisterAccount" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Registration.lunchBrowser">
+    <configuration name="Registration.contactUs" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestAutomastionExercise" />
       <extension name="coverage">
         <pattern>
@@ -52,7 +63,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.exercise.testCases" />
       <option name="MAIN_CLASS_NAME" value="com.exercise.testCases.Registration" />
-      <option name="METHOD_NAME" value="RegisterAccount" />
+      <option name="METHOD_NAME" value="contactUs" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -60,7 +71,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Registration.invalidUserDetails" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Registration.lunchBrowser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestAutomastionExercise" />
       <extension name="coverage">
         <pattern>
@@ -70,25 +81,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.exercise.testCases" />
       <option name="MAIN_CLASS_NAME" value="com.exercise.testCases.Registration" />
-      <option name="METHOD_NAME" value="invalidUserDetails" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Registration.login" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TestAutomastionExercise" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.exercise.testCases.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.exercise.testCases" />
-      <option name="MAIN_CLASS_NAME" value="com.exercise.testCases.Registration" />
-      <option name="METHOD_NAME" value="login" />
+      <option name="METHOD_NAME" value="lunchBrowser" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -114,7 +107,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Registration.validUserLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Registration.testCaseBtn" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TestAutomastionExercise" />
       <extension name="coverage">
         <pattern>
@@ -124,7 +117,25 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.exercise.testCases" />
       <option name="MAIN_CLASS_NAME" value="com.exercise.testCases.Registration" />
-      <option name="METHOD_NAME" value="validUserLogin" />
+      <option name="METHOD_NAME" value="testCaseBtn" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Registration.testProduct" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TestAutomastionExercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.exercise.testCases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.exercise.testCases" />
+      <option name="MAIN_CLASS_NAME" value="com.exercise.testCases.Registration" />
+      <option name="METHOD_NAME" value="testProduct" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -134,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Registration.lunchBrowser" />
+        <item itemvalue="TestNG.Registration.testProduct" />
+        <item itemvalue="TestNG.Registration.testCaseBtn" />
+        <item itemvalue="TestNG.Registration.contactUs" />
         <item itemvalue="TestNG.Registration.registerWithExistEmail" />
-        <item itemvalue="TestNG.Registration.validUserLogin" />
-        <item itemvalue="TestNG.Registration.invalidUserDetails" />
-        <item itemvalue="TestNG.Registration.login" />
-        <item itemvalue="TestNG.Registration.RegisterAccount" />
       </list>
     </recent_temporary>
   </component>
